@@ -1,10 +1,10 @@
-USAPROXYLOGPARSER - Java API for UsaProxy-fork logs
+UTAPROXYLOGPARSER - Java API for UTAPROXY logs
 version 0.0.2-SNAPSHOT
 Copyright (C) 2012 Teemu Pääkkönen - University of Tampere
 
 
 DESCRIPTION
-This Java library provides an object based API for handling UsaProxy-fork
+This Java library provides an object based API for handling UtaProxy
 log files. It is not intended to be used with the original UsaProxy software.
 See apidocs/index.html for API documentation.
 

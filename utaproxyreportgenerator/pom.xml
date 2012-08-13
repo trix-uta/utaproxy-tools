@@ -7,8 +7,8 @@
   <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>usaproxyreportgenerator</name>
-  <url>https://github.com/borc/usaproxy-tools</url>
+  <name>utaproxyreportgenerator</name>
+  <url>http://github.com/trix-uta/utaproxy-tools</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -130,7 +130,7 @@
 		        				<!-- The monocle data provider will be packaged separately -->
 		        				<exclude>**/MonocleDataProvider*.class</exclude>
 		        			</excludes>
-		         			<finalName>usaproxyreportgenerator</finalName>
+		         			<finalName>utaproxyreportgenerator</finalName>
 		       				<archive>
 		         				<manifest>
 		         					<addClasspath>true</addClasspath>

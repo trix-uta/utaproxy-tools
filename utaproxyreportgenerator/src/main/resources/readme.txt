@@ -1,11 +1,11 @@
-USAPROXYREPORTGENERATOR - HTML report generator for UsaProxyFork logs
+UTAPROXYREPORTGENERATOR - HTML report generator for UTAPROXY logs
 version 0.0.2-SNAPSHOT
 Copyright (C) 2012 Teemu Pääkkönen - University of Tampere
 
 
 DESCRIPTION
-This software creates HTML reports from UsaProxyFork logs. Run it with:
-`java -jar usaproxyreportgenerator.jar [options] <path-to-log.txt>`
+This software creates HTML reports from UtaProxy logs. Run it with:
+`java -jar utaproxyreportgenerator.jar [options] <path-to-log.txt>`
 You can specify multiple log files to have the generator create reports
 from each one.
 
@@ -23,7 +23,7 @@ Options:
 DATA PROVIDER PLUGINS
 Data providers instruct the generator on how to produce plot data points from
 log data. There is a default data provider that provides plot data for regular
-UsaProxy log data. In addition, it is possible to have plugins that provide 
+UtaProxy log data. In addition, it is possible to have plugins that provide 
 other ways to extract plot data from the parsed log files. The `dataProvider`
 command line option can be used to change the data provider class. The JAR file
 that contains the specified data provider must reside in the `plugins/`

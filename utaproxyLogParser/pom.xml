@@ -4,9 +4,9 @@
 
     <groupId>fi.uta.infim</groupId>
     <artifactId>usaproxylogparser</artifactId>
-    <name>UsaProxyLogParser</name>
+    <name>utaproxyLogParser</name>
     <version>0.0.2-SNAPSHOT</version>
-    <url>https://github.com/borc/usaproxy-tools</url>
+    <url>http://github.com/trix-uta/utaproxy-tools</url>
 
     <packaging>jar</packaging>
 

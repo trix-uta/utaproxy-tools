@@ -7,8 +7,8 @@
   <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>usaproxyFork</name>
-  <url>http://github.com/borc/usaproxy-tools</url>
+  <name>utaproxy</name>
+  <url>http://github.com/trix-uta/utaproxy-tools</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,7 +29,7 @@
   			<groupId>org.apache.maven.plugins</groupId>
          	<artifactId>maven-jar-plugin</artifactId>
          	<configuration>
-         		<finalName>usaproxyFork</finalName>
+         		<finalName>utaproxy</finalName>
          		<archive>
          			<manifest>
            				<mainClass>fi.uta.infim.usaproxyFork.UsaProxy</mainClass>

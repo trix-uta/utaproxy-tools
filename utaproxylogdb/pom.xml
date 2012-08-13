@@ -7,8 +7,8 @@
   <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>usaproxylog2db</name>
-  <url>https://github.com/borc/usaproxy-tools</url>
+  <name>utaproxylog2db</name>
+  <url>http://github.com/trix-uta/utaproxy-tools</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -88,7 +88,7 @@
   			<groupId>org.apache.maven.plugins</groupId>
          	<artifactId>maven-jar-plugin</artifactId>
          	<configuration>
-         		<finalName>usaproxylog2db</finalName>
+         		<finalName>utaproxylog2db</finalName>
          		<archive>
          			<manifest>
            				<mainClass>fi.uta.infim.usaproxylogdb.Main</mainClass>

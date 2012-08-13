@@ -1,10 +1,10 @@
-USAPROXYLOG2DB - tool for storing UsaProxy-fork logs into a database
+UTAPROXYLOG2DB - tool for storing UTAPROXY logs into a database
 version 0.0.2-SNAPSHOT
 Copyright (C) 2012 Teemu Pääkkönen - University of Tampere
 
 
 DESCRIPTION
-This software reads UsaProxyFork logs and stores them in a database.
+This software reads UtaProxy logs and stores them in a database.
 
 
 PRE-REQUISITES
@@ -23,7 +23,7 @@ your database.
 RUNNING
  
 Run it with:
-`java -jar usaproxylog2db.jar <path-to-log.txt>`
+`java -jar utaproxylog2db.jar <path-to-log.txt>`
 
 All http traffic log files must also be available at the log's location.
  
