@@ -31,6 +31,8 @@ public interface Mode {
      *  @param usaProxyIP is the UsaProxy IP address
      *  @param usaProxyPort is the UsaProxy port
      *  @param filename is the name of the JavaScript file to be referred to
+     *  @param defer controls whether the defer attribute is set - defer makes
+     *         the browser defer loading until other scripts have been loaded
      *  @return the customized reference string
      */
 	public String getScriptString(InetAddress usaProxyIP, int usaProxyPort, String filename, boolean defer);
@@ -43,6 +45,8 @@ public interface Mode {
 	 * @return
 	 */
 	public String getScriptString(InetAddress usaProxyIP, int usaProxyPort, String filename);
+	
+	public String getStylesheetString(InetAddress usaProxyIP, int usaProxyPort, String filename);
 	
 	/**
 	 * Sets the customized request URL according to the deployed proxy mode.

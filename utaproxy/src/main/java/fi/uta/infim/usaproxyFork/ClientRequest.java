@@ -1307,7 +1307,8 @@ public class ClientRequest extends Thread {
 	                	rmScriptString 	= usaProxy.getMode().getScriptString(usaProxy.getIP(), usaProxy.getPort(), "remotemonitoring.js");
 	                
 	                PluginsHeader pluginsHeader = generatePluginsHeader();
-	                scriptString = pluginsHeader.supportScript + generateHeaderJS() + 
+	                scriptString = pluginsHeader.pluginsCSS + pluginsHeader.supportScript + 
+	                		generateHeaderJS() + pluginsHeader.configurationScript + 
 	                		pluginsHeader.pluginsScript + scriptString;
 	                
 	                scriptString = 
@@ -1377,6 +1378,8 @@ public class ClientRequest extends Thread {
     private class PluginsHeader {
     	public String pluginsScript;
     	public String supportScript;
+    	public String pluginsCSS;
+    	public String configurationScript;
     }
     
     private PluginsHeader generatePluginsHeader()
@@ -1384,6 +1387,8 @@ public class ClientRequest extends Thread {
     	PluginsHeader header = new PluginsHeader();
     	String pluginsJS = "";
     	String supportJS = "";
+    	String pluginsCSS = "";
+    	String configurationScript = "<script type=\"text/javascript\">";
     	Map<String, PluginDescriptor> plugins = usaProxy.getPlugins();
     	for ( String pluginName : plugins.keySet() )
 		{
@@ -1397,9 +1402,26 @@ public class ClientRequest extends Thread {
 						usaProxy.getMode().getScriptString(usaProxy.getIP(), usaProxy.getPort(), 
 								"plugins/" + pluginName + "/" + jsFilename );
 			}
+			for ( String cssFilename : descriptor.getCssFilenames() )
+			{
+				pluginsCSS +=
+						usaProxy.getMode().getStylesheetString( usaProxy.getIP(), usaProxy.getPort(), 
+								"plugins/" + pluginName + "/" + cssFilename );
+			}
+			
+			// Configuration file may exist, or not
+			try {
+				File configuration = new File( PluginDescriptorFactory.getPluginDir( pluginName ), "config.json" );
+				configurationScript += "window.UsaProxy.pluginConfigurations[ '" + pluginName + "' ] = " +
+						new Scanner(configuration).useDelimiter( "\\Z" ).next() + "; ";
+			} catch (FileNotFoundException e) {
+				// We do absolutely nothing about it if there is no configuration file
+			}
 		}
     	header.pluginsScript = pluginsJS;
     	header.supportScript = supportJS;
+    	header.pluginsCSS = pluginsCSS;
+    	header.configurationScript = configurationScript + "</script>";
     	return header;
     }
     
@@ -1651,6 +1673,7 @@ public class ClientRequest extends Thread {
 		js += "if ( typeof window.UsaProxy !== 'object' ) { window.UsaProxy = {}; } ";
 		
 		js += "window.UsaProxy.plugins = {}; "; // plugins object
+		js += "window.UsaProxy.pluginConfigurations = {}; "; // plugins' configuration data 
 		js += "window.UsaProxy.jQuery = jQuery.noConflict( true ); "; // jQuery in no-conflict mode
 		
 		// Node types

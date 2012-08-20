@@ -116,4 +116,11 @@ public class ServerMode implements Mode {
 		return getScriptString(usaProxyIP, usaProxyPort, filename, false);
 	}
 
+	@Override
+	public String getStylesheetString(InetAddress usaProxyIP, int usaProxyPort,
+			String filename) {
+		return "<link rel='stylesheet' href='"
+	            + "/usaproxylolo/file/" + filename + "' type='text/css' ></script>";
+	}
+
 }

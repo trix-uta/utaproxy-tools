@@ -112,4 +112,15 @@ public class RemoteMode implements Mode {
 		return getScriptString(usaProxyIP, usaProxyPort, filename, false);
 	}
 
+	@Override
+	public String getStylesheetString(InetAddress usaProxyIP, int usaProxyPort,
+			String filename) {
+		String usaProxyHost = "";
+		if(usaProxyIP!=null) {
+			usaProxyHost = usaProxyIP.getHostAddress();
+		} else usaProxyHost = "lo.lo";
+		return "<link rel='stylesheet' href='http://" + usaProxyHost
+            + "/usaproxylolo/file/" + filename + "' type='text/css' ></script>";
+	}
+
 }

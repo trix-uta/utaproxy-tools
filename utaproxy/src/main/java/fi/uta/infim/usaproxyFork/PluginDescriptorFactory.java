@@ -30,8 +30,14 @@ public abstract class PluginDescriptorFactory {
 	 */
 	public static PluginDescriptor getDescriptorByName( String name )
 	{
-		File thisPluginDir = new File( UsaProxy.PLUGINS_DIR, name );
+		File thisPluginDir = getPluginDir( name );
 		File descriptorFile = new File( thisPluginDir, "descriptor.xml" );
 		return createFromFile(descriptorFile);
 	}
+	
+	public static File getPluginDir( String name )
+	{
+		return new File( UsaProxy.PLUGINS_DIR, name );
+	}
+
 }

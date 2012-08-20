@@ -663,7 +663,7 @@ var init_plugins = function() {
 						
 						jQuery_UsaProxy( bindTo ).on( events.join( ' ' ), function( e ) {
 							var eventAttributes = event.onTrigger( e );
-							writeLog_UsaProxy( 'plugin&eventType=' + e.type + '&' + objectToQuery( eventAttributes ) );
+							writeLog_UsaProxy( 'plugin&plugin=' + i + '&eventType=' + e.type + '&' + objectToQuery( eventAttributes ) );
 						} );
 					};
 					

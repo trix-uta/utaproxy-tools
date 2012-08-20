@@ -1,11 +1,14 @@
 package fi.uta.infim.usaproxyFork;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement(name="plugin")
 public class PluginDescriptor {
@@ -23,7 +26,7 @@ public class PluginDescriptor {
 	/**
 	 * Filenames of all the other (support) JS files to load
 	 */
-	private List< String > jsFilenames;
+	private List< String > jsFilenames = new ArrayList<String>();
 	
 	@Override
 	public String toString() {
@@ -33,7 +36,7 @@ public class PluginDescriptor {
 	/**
 	 * Filenames of the CSS files to load
 	 */
-	private List< String > cssFilenames;
+	private List< String > cssFilenames = new ArrayList<String>();
 
 	@XmlAttribute
 	public String getName() {
@@ -70,6 +73,5 @@ public class PluginDescriptor {
 
 	public void setPluginFilename(String pluginFilename) {
 		this.pluginFilename = pluginFilename;
-	}
-	
+	}	
 }

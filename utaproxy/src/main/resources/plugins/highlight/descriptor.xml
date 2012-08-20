@@ -1,0 +1,6 @@
+<plugin name="Element highlighter plugin">
+    <pluginFilename>usaproxy.highlight.plugin.js</pluginFilename>
+    <cssFiles>
+        <filename>highlight.css</filename>
+    </cssFiles>
+</plugin>
