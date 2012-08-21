@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>fi.uta.infim</groupId>
-  <artifactId>usaproxylog2db</artifactId>
+  <groupId>fi.uta.sis.trix</groupId>
+  <artifactId>utaproxylog2db</artifactId>
   <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -16,8 +16,8 @@
 
   <dependencies>
     <dependency>
-  		<groupId>fi.uta.infim</groupId>
-  		<artifactId>usaproxylogparser</artifactId>
+  		<groupId>fi.uta.sis.trix</groupId>
+  		<artifactId>utaproxylogparser</artifactId>
   		<version>0.0.2-SNAPSHOT</version>
 	</dependency>
 	
