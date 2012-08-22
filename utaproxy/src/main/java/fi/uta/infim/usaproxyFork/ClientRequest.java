@@ -1328,8 +1328,8 @@ public class ClientRequest extends Thread {
 	                		scriptString;
 	                
 	                scriptString = 
-	                		"<script type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\"></script>" +
-	                				scriptString;
+	                		usaProxy.getMode().getScriptString(usaProxy.getIP(), usaProxy.getPort(), "jquery-1.7.2.min.js") +
+	                		scriptString;
 
 	                /** add first part of response together with the scriptstrings
 	                 *  to the data StringBuffer object which will be transmitted later */
