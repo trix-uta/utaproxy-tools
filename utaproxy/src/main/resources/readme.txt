@@ -167,6 +167,14 @@ File httpTraffic.txt (directly under "httpTraffic") contains the current index a
 File isCachingEnabled.txt (also directly under "httpTraffic") contains the information whether
 this kind of HTTPTraffic logging shall take place. If you don't like to have UtaProxy store the HTTP traffic that is produced, change the value to "false".
 
+#### plugins ####
+
+Got a ready-made plugin? Just unpack it into the plugins directory.
+See plugins.txt for more info.
+
+##### writing a plugin #####
+
+See plugins.txt for details.
 
 ##### license #####
 
