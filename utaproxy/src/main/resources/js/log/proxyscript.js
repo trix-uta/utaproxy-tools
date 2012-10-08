@@ -707,15 +707,9 @@ function date_UsaProxy(datestamp /*string*/) {
 }
 
 /* Returns a timestamp string of the form "2004-12-31,23:59:59.999".
- * Takes UsaProxy's httptraffic log entry time as start time and adds
- * the difference between load time and current time */
+ * Uses current time for timestamp. */
 function datestamp_UsaProxy() {
-	if (loadDate_UsaProxy==null) loadDate_UsaProxy = new Date();
-	var currentDate 	= new Date();
-	// get milliseconds from load time
-	var diffSecs 		= Math.abs(currentDate.getTime() - loadDate_UsaProxy.getTime());
-	// return new Date object according to UsaProxy start time + diffMSecs
-	var currentUPDate 	= new Date(startDate_UsaProxy.getTime() + diffSecs);
+	var currentUPDate 	= new Date();
 
 	return currentUPDate.getFullYear() + "-" + completeDateVals(currentUPDate.getMonth() + 1) + "-"
 	  + completeDateVals(currentUPDate.getDate()) + "," + completeDateVals(currentUPDate.getHours())
