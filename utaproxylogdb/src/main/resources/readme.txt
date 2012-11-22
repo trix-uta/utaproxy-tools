@@ -1,5 +1,5 @@
 UTAPROXYLOG2DB - tool for storing UTAPROXY logs into a database
-version 0.0.2-SNAPSHOT
+version 0.0.2
 Copyright (C) 2012 Teemu Pääkkönen - University of Tampere
 
 

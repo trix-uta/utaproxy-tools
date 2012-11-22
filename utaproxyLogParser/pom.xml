@@ -5,7 +5,7 @@
     <groupId>fi.uta.sis.trix</groupId>
     <artifactId>utaproxylogparser</artifactId>
     <name>utaproxyLogParser</name>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <url>http://github.com/trix-uta/utaproxy-tools</url>
 
     <packaging>jar</packaging>

@@ -1,5 +1,5 @@
 UTAPROXYREPORTGENERATOR - HTML report generator for UTAPROXY logs
-version 0.0.2-SNAPSHOT
+version 0.0.2
 Copyright (C) 2012 Teemu Pääkkönen - University of Tampere
 
 

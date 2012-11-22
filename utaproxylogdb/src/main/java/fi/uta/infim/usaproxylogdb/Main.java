@@ -43,7 +43,7 @@ public final class Main {
 	 */
 	private static void printLicense()
 	{
-		System.out.println( "UsaProxyLog2DB version 0.0.2-SNAPSHOT, " +
+		System.out.println( "UsaProxyLog2DB version 0.0.2, " +
 				"Copyright (C) 2012 Teemu Pääkkönen - University of Tampere" );
 		System.out.println( "UsaProxyLog2DB comes with ABSOLUTELY NO WARRANTY; for details see gpl.txt." );
 		System.out.println( "This is free software, and you are welcome to redistribute it " +
