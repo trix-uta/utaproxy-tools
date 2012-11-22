@@ -4,7 +4,7 @@
 
   <groupId>fi.uta.sis.trix</groupId>
   <artifactId>utaproxyreportgenerator</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>utaproxyreportgenerator</name>
@@ -23,7 +23,7 @@
   	<dependency>
   		<groupId>fi.uta.sis.trix</groupId>
   		<artifactId>utaproxylogparser</artifactId>
-  		<version>0.0.2</version>
+  		<version>0.0.3-SNAPSHOT</version>
 	</dependency>
 	<dependency>
 		<groupId>net.sf.json-lib</groupId>

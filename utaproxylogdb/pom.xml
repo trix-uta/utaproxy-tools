@@ -4,7 +4,7 @@
 
   <groupId>fi.uta.sis.trix</groupId>
   <artifactId>utaproxylog2db</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>utaproxylog2db</name>
@@ -18,7 +18,7 @@
     <dependency>
   		<groupId>fi.uta.sis.trix</groupId>
   		<artifactId>utaproxylogparser</artifactId>
-  		<version>0.0.2</version>
+  		<version>0.0.3-SNAPSHOT</version>
 	</dependency>
 	
 	<dependency>

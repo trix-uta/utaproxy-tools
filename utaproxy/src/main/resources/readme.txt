@@ -1,5 +1,5 @@
 UtaProxy - A HTTP proxy/server with user interaction tracking
-version 0.0.2
+version 0.0.3-SNAPSHOT
 Copyright (C) 2006  Monika Wnuk - Media Informatics Group at the University of Munich
 Copyright (C) 2012 Teemu Pääkkönen - University of Tampere
 
